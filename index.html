@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+
+    <!--links for styling-->
+
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
+    <script src="https://kit.fontawesome.com/984d19d7d7.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="back-vid" id="hero">
+        <img src="./Extras/2278095-hd_1920_1080_30fps-ezgif.com-video-to-webp-converter.webp">
+
+        <div class="hero-text">
+            <h2>Hi, im Giovanni Toro</h2>
+            <br>
+            <p>Im a beginner front end web developer aiming for a full stack career. I can make simple yet effective websites with clean design and functionality.</p>
+        </div>
+    </div>
+    <header class="header">
+        <div class="site-title">
+            <a href="#hero"><h1>GT</h1></a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="nav" id="primary-nav">
+            <ul>
+                <li class="nav-link"><a href="#about">About</a></li>
+                <li class="nav-link"><a href="#skills">Skills</a></li>
+                <li class="nav-link"><a href="#projects">Projects</a></li>
+                <li class="nav-link"><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        </header>   
+    
+
+    <main>
+    
+        <section id="about">
+            <img src="./Extras/99df05b4-d55b-4277-9c89-9da815ff34ca.jpg " class="profile-pic" alt="Profile Picture">
+
+            <div class="about-text">
+            <h2>About Me</h2>
+            <p>Im a young web developer with a passion for creating clean, functional websites. I enjoy solving problems and bringing ideas to life through code.</p>
+            <br>
+            <p>Right now I am working on personal portfolios, static websites, and small front end projects to build my skills and continue learning.</p>
+            <br>
+            <p>Im early in my journey but in the future I hope to work on larger projects, collaborate with other developers. I pride in learning properly and writing clean code, so I am always looking for ways to improve and grow as a developer, delivering simple yet effective solutions.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li class="code-logo" id="html-logo">
+                    <i class="fa-brands fa-html5"></i>
+                    <span>HTML</span>
+                </li>
+                <li class="code-logo" id="css-logo">
+                    <i class="fa-brands fa-css3"></i>
+                    <span>CSS</span>
+                </li>
+                <li class="code-logo" id="js-logo">
+                    <i class="fa-brands fa-js"></i>
+                    <span>JavaScript</span>
+                </li>
+                <li class="code-logo" id="git-logo">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <span>Git</span>
+                </li>
+                <li class="code-logo" id="github-logo">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <article class="project-box">
+                    <div class="project-media">
+                    <img src="./Extras/clker-free-vector-images-pencil-308509_1280.png" alt="To Do List App preview">
+                    </div>
+                    <h3 class="project-title">To Do List App</h3>
+                    <p class="project-description">A simple to do list app built with HTML, CSS, and JavaScript. It allows users to add, edit, and delete tasks, helping them stay organized and manage their time effectively.</p>
+                    <div class="project-links">
+                        <a href="https://gtoro06.github.io/To-Do-List-Project/" target="_blank" ><button class="project-btn">View Project</button></a>
+
+                        <a href="https://github.com/Gtoro06/To-Do-List-Project" target="_blank"><button class="project-btn">Repository</button></a>
+                    </div>
+                </article>
+
+                <article class="project-box">
+                    <div class="project-media">
+                    <img src="./Extras/weather-news.png" alt="Weather App preview">
+                    </div>
+                    <h3 class="project-title">Weather App</h3>
+                    <p class="project-description">A simple weather application that displays current weather conditions and forecasts for a given location. Built with HTML, CSS, and JavaScript using a weather API.</p>
+                    <div class="project-links">
+                        <a href="https://gtoro06.github.io/Weather-App-project/" target="_blank" ><button class="project-btn">View Project</button></a>
+
+                        <a href="https://github.com/Gtoro06/Weather-App-project" target="_blank"><button class="project-btn">Repository</button></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-img">
+                <img src="./Extras/99df05b4-d55b-4277-9c89-9da815ff34ca.jpg" alt="Profile image">
+            </div>
+            <div class="contact-info">
+            <p class="email">Email: alonsotoro32@gmail.com</p>
+            <p class="phone">Phone: (954) 639 1494</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="timer">You have been on this site for <span id="time-display">0</span> seconds</p>
+
+        <div class="github-link">
+            <a href="https://github.com/Gtoro06" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </footer>
+    
+</body>
+</html>
