@@ -13,7 +13,18 @@ setInterval(() => {
     timeDisplay.textContent = secondsOnSite;
 }, 1000);
 
-menuToggle.addEventListener('click', () => {
-    const isOpen = nav.classList.toggle('open');
-    menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-});
+if (menuToggle && nav) {
+    menuToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        document.body.classList.toggle('menu-open', isOpen);
+    });
+
+    nav.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            document.body.classList.remove('menu-open');
+        });
+    });
+}
